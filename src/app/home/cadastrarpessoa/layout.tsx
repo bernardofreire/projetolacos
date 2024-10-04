@@ -13,7 +13,7 @@ interface LayoutProps {
 const LayoutCadastroPessoa = ({ children }: LayoutProps) => {
   const pathname = usePathname();
 
-  // Determine a etapa atual com base no pathname
+  // Determine a etapa atual com base no pathnames
   const stepIndex = () => {
     if (pathname.includes('/dadosbasicos')) return 1;
     if (pathname.includes('/infoadd')) return 2;
