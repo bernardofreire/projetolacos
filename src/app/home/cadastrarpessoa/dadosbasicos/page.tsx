@@ -45,7 +45,7 @@ const DadosBasicos = () => {
   // Função para lidar com o envio do formulário
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    updateCadastroData('dadosBasicos', formData); // Atualizar os dados na etapa de envio
+    updateCadastroData('dadosBasicos', formData); // Atualizar os dados basicos na etapa de envio
     router.push('/home/cadastrarpessoa/infoadd');
   };
 
